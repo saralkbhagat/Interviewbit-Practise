@@ -1,0 +1,20 @@
+def sum(root,s):
+    if root is None:
+        return
+    if root.data is None:
+        root=None
+     # print(root.data)
+    # if s == 0 and root.left is None and root.right is None:
+    #     print("true")
+    sum(root.left,s)
+    sum(root.right, s)
+sum(head,s)
+
+Print function 
+def pp(root):
+            if root is None:
+                return
+            print(root.val)
+            pp(root.left)
+            pp(root.right)
+        pp(root)
